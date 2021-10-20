@@ -1,5 +1,5 @@
 window.onload=()=>{
-    const requestURLs=['http://techi.envivent.com/names.json', 'http://techi.envivent.com/description.json', 'http://techi.envivent.com/images.json'];
+    const requestURLs=['https://techi.envivent.com/names.json', 'https://techi.envivent.com/description.json', 'https://techi.envivent.com/images.json'];
     const random=[]
     const randomLength=3
     const min=1
