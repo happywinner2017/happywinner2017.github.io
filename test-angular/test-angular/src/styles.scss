@@ -1,0 +1,140 @@
+@import "assets/myStyle.scss";
+/* Kanit */
+@font-face{
+  font-family: "Kanit-Thin";
+  src: url("./assets/fonts/Kanit-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Kanit-Light";
+  src: url("./assets/fonts/Kanit-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Kanit-Regular";
+  src: url("./assets/fonts/Kanit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Kanit-Medium";
+  src: url("./assets/fonts/Kanit-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Kanit-Bold";
+  src: url("./assets/fonts/Kanit-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Star wars
+@font-face{
+  font-family: "Stjldbl1";
+  src: url("./assets/fonts/Stjldbl1.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Strjmono";
+  src: url("./assets/fonts/Strjmono.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Starjhol";
+  src: url("./assets/fonts/Starjhol.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Kanit-Light', sans-serif!important;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  font-size: 18px!important;
+  line-height: 1.8!important;
+  background-color: #000;
+  color: #fff;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  // font-family: 'Kanit-Regular', sans-serif;
+  &:hover{
+    cursor: pointer;
+  }
+}
+ul {
+  list-style: none;
+}
+.btn{
+  background: transparent;
+  @include box-shadow(0 0 5px rgba(255, 255, 255, .6));
+  cursor: pointer;
+  border: 1px solid #fffd00;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 104.5%;
+  text-align: center;
+  @include border-radius(5px);
+  color: #fff;
+  outline: none;
+  width: 130px;
+  height: 34px;
+  margin: 30px auto;
+  position: relative;
+  @include transition(all ease .3s);
+  overflow: hidden;
+  &::after{
+    background: #fffd00;
+    content: "";
+    height: 155px;
+    left: -50px;
+    opacity: .3;
+    position: absolute;
+    top: -86px;
+    @include transform(rotate(35deg));
+    @include transition(all 800ms cubic-bezier(0.19, 1, 0.22, 1));
+    width: 40px;
+  }
+  &:hover{
+    // background: rgba(255,221,0,0.9);
+    @include box-shadow(none);
+    &::after{
+      left: 180px;
+    }
+  }
+}
+h1{
+  font-size: 47px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Starjhol', sans-serif;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
