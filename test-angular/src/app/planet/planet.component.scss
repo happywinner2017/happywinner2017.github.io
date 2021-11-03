@@ -1,0 +1,36 @@
+.pl{
+  text-align: center;
+  margin: 10px;
+  font-family: "Stjldbl1", sans-serif;
+  font-size: 24px;
+}
+h1{
+  margin: 10px 0;
+}
+.planetInfo{
+  width: 30%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #fffd00;
+  border-radius: 5px;
+  li{
+    font-family: "Kanit-Thin", sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+  span{
+    margin-right: 20px;
+  }
+
+}
+@media only screen and (max-width: 576px){
+  .planetInfo{
+    width: 70%;
+    margin-bottom: 50px;
+
+  }
+
+
+
+}
